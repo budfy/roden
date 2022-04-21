@@ -5,8 +5,11 @@
   "main": "gulpfile.js",
   "scripts": {
     "html": "gulp",
+    "dev": "gulp",
+    "start": "gulp",
     "php": "gulp dev_php",
     "build": "gulp libs_style && gulp svg_css && gulp ttf && gulp fonts && gulp style && gulp libs_js && gulp build_js && gulp rastr && gulp webp && gulp svg_sprite && gulp html && gulp php",
+    "prod": "gulp libs_style && gulp svg_css && gulp ttf && gulp fonts && gulp style && gulp libs_js && gulp build_js && gulp rastr && gulp webp && gulp svg_sprite && gulp html && gulp php",
     "ftp": "gulp deploy",
     "build-ftp": "npm run build && npm run ftp"
   },
@@ -27,7 +30,7 @@
     "gulp-imagemin": "^7.1.0",
     "gulp-multi-dest": "^1.3.7",
     "gulp-plumber": "^1.2.1",
-    "gulp-sass": "^4.1.0",
+    "gulp-sass": "^5.1.0",
     "gulp-sass-bulk-importer": "^3.0.1",
     "gulp-sourcemaps": "^3.0.0",
     "gulp-svg-css-pseudo": "^1.0.4",
@@ -42,6 +45,8 @@
     "require-dir": "^1.2.0",
     "vinyl-ftp": "^0.6.1"
   },
-  "dependencies": {},
+  "dependencies": {
+    "sass": "^1.50.1"
+  },
   "repository": "https://github.com/budfy/roden.git"
 }

@@ -13,6 +13,7 @@ exports.html = tasks.html;
 exports.php = tasks.php;
 exports.rastr = tasks.rastr;
 exports.webp = tasks.webp;
+exports.video = tasks.video;
 exports.svg_sprite = tasks.svg_sprite;
 exports.ttf = tasks.ttf;
 exports.ttf2 = tasks.ttf2;
@@ -32,6 +33,7 @@ exports.default = gulp.parallel(
   exports.dev_js,
   exports.rastr,
   exports.webp,
+  exports.video,
   exports.svg_sprite,
   exports.html,
   exports.bs_html,
@@ -48,6 +50,7 @@ exports.dev_php = gulp.parallel(
   exports.dev_js,
   exports.rastr,
   exports.webp,
+  exports.video,
   exports.svg_sprite,
   exports.php,
   exports.bs_php,
