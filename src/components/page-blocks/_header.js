@@ -67,9 +67,11 @@ function headerBubbles() {
       let percentY = (e.pageY / window.innerHeight).toFixed(1);
 
       const coeffitient = [7, -5, -3, 6];
+      const coefX = 30,
+        coefY = 10;
 
       bubbleArr.forEach((el, index) => {
-        el.setAttribute('style', `transform: translate(${coeffitient[index]*percentX*30}px, ${coeffitient[index]*percentY*10}px)`)
+        el.setAttribute('style', `transform: translate(${coeffitient[index]*percentX*coefX}px, ${coeffitient[index]*percentY*coefY}px)`)
       })
     }
 
