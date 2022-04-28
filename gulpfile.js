@@ -21,6 +21,7 @@ exports.bs_html = tasks.bs_html;
 exports.bs_php = tasks.bs_php;
 exports.watch = tasks.watch;
 exports.deploy = tasks.deploy;
+exports.makeDocs = tasks.makeDocs;
 
 exports.default = gulp.parallel(
   exports.libs_style,
